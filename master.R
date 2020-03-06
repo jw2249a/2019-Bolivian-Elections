@@ -16,7 +16,7 @@ library(arealOverlap)
 library(stringi)
 library(stringr)
 ####importing data 
-elec_results <- read.csv("computo_clean.csv") ### we will want a binomial dists by area, which will then allow us to calculate the prop of
+elec_results <- read.csv("final_computo.csv") ### we will want a binomial dists by area, which will then allow us to calculate the prop of
 trep_results <- read.csv("final_trep.csv") ### we will want a binomial dists by area, which will then allow us to calculate the prop of
 ########## creating vars 
 sum(raw_before$MAS...IPSP,na.rm=T)/sum(raw_before$imputed.votes, na.rm=T) #Mas pct before: 0.4363319
@@ -151,14 +151,10 @@ legend("topleft", bty="n",c("Mean", "95% CI", "10 pp cutoff", "Reported TREP Mar
 #####Jack R Williams ################
 library(ggplot2)
 options(scipen = 999999)
-setwd("C:/Users/Jack Ryan Williams/Desktop/bolivia/data/")
-
-# read in map
-bolivia <- readOGR("final/bolivia", use_iconv=TRUE, encoding="UTF-8")
 
 # read in computo and trep
-computo <- read.csv("final/final_computo.csv", as.is = T)
-trep <- read.csv("final/final_trep.csv", as.is = T)
+computo <- read.csv("final_computo.csv", as.is = T)
+trep <- read.csv("final_trep.csv", as.is = T)
 
 ############################# global names #####################################
 globs <- new.env()
@@ -180,7 +176,7 @@ globs$numeric_vars <- c(globs$parties, "Inscritos", "Votos.Válidos", "Blancos",
 
 
 ################# Transmission of votes computo pg 9 unofficial ################
-# Note I think this is incorrectly labeled as transmission instead of posted 
+# Note we don't have transmission data yay! this is attempt at verifying
 # verified results
 return_density <- function(dat, dir, file) {
   on.exit(dev.off())
