@@ -1,6 +1,6 @@
 Disclosure: In December 2019, the Center for Economic and Policy Research (CEPR) contracted with the authors
 to see if the numerical and statistical results of CEPR's November 2019 study could be independently verified. Any
-analysis and interpretation of findings in this report express the sole views of the authors
+analysis, addition, and interpretation of findings in this report express the sole views of the authors
 
 # 2019-Bolivian-Elections
 Respository for the 2019 Bolivian Elections code and data that was used in https://www.washingtonpost.com/politics/2020/02/26/bolivia-dismissed-its-october-elections-fraudulent-our-research-found-no-reason-suspect-fraud/
