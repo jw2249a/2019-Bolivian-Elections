@@ -9,7 +9,7 @@ Below is an updated plot, with two important changes from our prior work. First,
 
 The new plot demonstrates that as sampled and simulated, excluding the prior and drawing only from the information that we have on geography, the predicted margin would be about 9.9 percentage points, as calculated from the data before the halt in the TREP count. Note that to for MAS to have surpassed the ten percentage point threshold, a prior that is two percent of the size of the geographic component is all that is necessary, given our code. 
 
-![simulated bayes01](https://raw.githubusercontent.com/jw2249a/2019-Bolivian-Elections/master/bayes_plot0.02.jpeg)
+![simulated bayes01](https://raw.githubusercontent.com/jw2249a/2019-Bolivian-Elections/master/bayes_plot0.02.jpg)
 
 Therefore, there is no denying that the election was close. However, the election outcome in favor of MAS given the OAS design would necessitate strong evidence to throw out 100 percent of the ballots due to all of them being fraudulant so as to demonstrate that fraud decisively affected the election outcome. 
 
