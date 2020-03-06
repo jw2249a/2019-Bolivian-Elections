@@ -3,3 +3,4 @@ Respository for the 2019 Bolivian Elections code and data that was used to in ht
 
 Included is cleaned trep and Computo, additional analyses will be added here as well. 
 
+![simulated bayes](https://raw.githubusercontent.com/jw2249a/2019-Bolivian-Elections/master/simulation_bayes_plot.png)
