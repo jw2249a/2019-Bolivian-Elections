@@ -67,7 +67,7 @@ for(j in 1:100){
     if(nrow(temp1)<3 | nrow(temp2)<3 | nrow(temp3) <3){
       maas_gammas <- rgamma(1000, boot_temp$MAS...IPSP+raw_after$MAS...IPSP[i]*j*0.1,
                             rate=boot_temp$imputed.votes+raw_after$imputed.votes[i]*j*0.1  )
-      cc_gammas <- rgamma(1000, boot_temp$CC+raw_after$CC[i]*b*0.1,
+      cc_gammas <- rgamma(1000, boot_temp$CC+raw_after$CC[i]*j*0.1,
                           boot_temp$imputed.votes+raw_after$imputed.votes[i]*j*0.1 )
       other_gammas <- rgamma(1000, boot_temp$third_party+raw_after$third_party[i]*j*0.1,
                              rate=boot_temp$imputed.votes+raw_after$imputed.votes[i]*j*0.1)
