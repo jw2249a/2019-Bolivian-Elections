@@ -20,8 +20,6 @@ library(stringr)
 elec_results <- read.csv("final_computo.csv") ### we will want a binomial dists by area, which will then allow us to calculate the prop of
 trep_results <- read.csv("final_trep.csv") ### we will want a binomial dists by area, which will then allow us to calculate the prop of
 ########## creating vars 
-sum(raw_before$MAS...IPSP,na.rm=T)/sum(raw_before$imputed.votes, na.rm=T) #Mas pct before: 0.4363319
-sum(raw_before$CC,na.rm=T)/sum(raw_before$imputed.votes, na.rm=T) ## CC pct before: 0.354635
 trep_results <- subset(trep_results, Elección == "Presidente y Vicepresidente")
 trep_results$cutoff_time <- as.numeric(as.POSIXct("2019-10-21")) ###time in which the votes stopped being counted
 ############Convertins the time to a numeric score
@@ -36,6 +34,8 @@ trep_results$after_stop <- 0
 trep_results$after_stop[trep_results$time_num >= trep_results$cutoff_time] <- 1
 raw_before <- subset(trep_results, after_stop==0)
 raw_after <- subset(trep_results, after_stop==1)
+sum(raw_before$MAS...IPSP,na.rm=T)/sum(raw_before$imputed.votes, na.rm=T) 
+sum(raw_before$CC,na.rm=T)/sum(raw_before$imputed.votes, na.rm=T) 
 trep_results$mas_pct <- trep_results$MAS...IPSP/trep_results$imputed.votes
 trep_results$cum_votepct <- 100*cumsum(trep_results$imputed.votes)/sum(trep_results$imputed.votes) 
 
